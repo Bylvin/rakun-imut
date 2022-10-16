@@ -1,5 +1,7 @@
 package mega.itdp.bookauthor.result;
 
+import java.util.Date;
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import mega.itdp.bookauthor.entity.Book;
@@ -14,6 +16,14 @@ public class BookResult
 	@JsonProperty(value="author_id")
 	private Long authorId;
 	
+	private Date createdAt;
+	private Date modifiedAt;
+	
+	public BookResult()
+	{
+		
+	}
+	
 	public BookResult(Book book)
 	{
 		this.id = book.getId();
@@ -21,6 +31,8 @@ public class BookResult
 		this.title = book.getTitle();
 		this.price = book.getPrice();
 		this.authorId = book.getAuthor().getId();
+		this.createdAt = book.getCreatedAt();
+		this.modifiedAt = book.getModifiedAt();
 	}
 	
 	public Book backToEntity(BookResult result)
@@ -63,5 +75,17 @@ public class BookResult
 	}
 	public void setAuthorId(Long authorId) {
 		this.authorId = authorId;
+	}
+	public Date getCreatedAt() {
+		return createdAt;
+	}
+	public void setCreatedAt(Date createdAt) {
+		this.createdAt = createdAt;
+	}
+	public Date getModifiedAt() {
+		return modifiedAt;
+	}
+	public void setModifiedAt(Date modifiedAt) {
+		this.modifiedAt = modifiedAt;
 	}
 }
