@@ -1,12 +1,28 @@
-<h2>Pilih Buku</h2>
+<nav class="navbar navbar-expand-lg nvbr">
+  <div class="container my-3">
+    <div class="col">
+      <a class="navbar-brand bar" (click)="goBack()">Kembali</a>
+    </div>
+    <div class="col">
+      <h2 class="text" *ngIf="person">{{person.name}}</h2>
+    </div>
+  </div>
+</nav>
 
-<ul class="books list-group">
-  <li *ngFor="let book of books" class="list-group-item">
-    <a routerLink="/books/{{book.id}}">
-      <div>
-        <div class="title">{{book.title}}</div>
-        <div class="price">{{book.price}}</div>
-      </div>
-    </a>
-  </li>
-</ul>
+<div class="container">
+  <h1 class="title m-5">Pilih Buku</h1>
+  <ul id="bookgroup" class="list-group row">
+    <li *ngFor="let book of books" class="list-group-item iter row">
+      <a routerLink="/books/{{book.id}}" class="btn btn-outline-warning col">
+        <div class="row">
+          <div class="col">
+            <div class="booktitle my-2">{{book.title}}</div>
+          </div>
+          <div class="col">
+            <div class="price my-2">Rp. {{book.price.toLocaleString()}}</div>
+          </div>
+        </div>
+      </a>
+    </li>
+  </ul>
+</div>

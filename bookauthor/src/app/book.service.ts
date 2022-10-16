@@ -11,6 +11,10 @@ import { Person } from './model/person';
 export class BookService {
 
   booksUrl = 'http://localhost:8080/books'
+  httpOptions = {
+    headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+  }
+
 
   constructor(
     private http: HttpClient
@@ -51,4 +55,17 @@ export class BookService {
       })
     );
   }
+
+  updatePerson(person: Person): Observable<any> {
+    return this.http.put<any>(this.booksUrl+'/'+person.id,
+        person, this.httpOptions)
+
+    .pipe(
+      catchError((error: any): Observable<any> =>{
+        console.log(error);
+        return of({} as any);
+      })
+    );
+  }
+  
 }

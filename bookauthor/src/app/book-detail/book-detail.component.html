@@ -1,3 +1,45 @@
+<nav class="navbar navbar-expand-lg nvbr">
+  <div class="container my-3">
+    <div class="col">
+      <a class="navbar-brand bar" (click)="goBack()">Kembali</a>
+    </div>
+    <div class="col">
+      <h2 class="text">Buku</h2>
+    </div>
+  </div>
+</nav>
+
+<main class="container" *ngIf="book">
+
+  <div class="box">
+    <span class="title">{{book.title}}</span>
+    <div class="hargaContainer">
+      <div class="label">Harga</div>
+      <span class="text" >Rp. {{localizer(book.price)}}</span>
+    </div>
+  </div>
+
+  <div class="button">
+    <input type="button" name="ubahHarga" class="btn btn-secondary mdlButton" value="Ubah Harga" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Ubah Harga</h1>
+          <input type="text" name="ubhHarga" class="txtInput" placeholder="Rp. {{localizer(book.price)}}" #input>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-warning btnModal" data-bs-dismiss="modal" (click)="changePrice(input.value);input.value=''">Ubah</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
 <div *ngIf="book">
   <h2>{{book.title | uppercase}} Details</h2>
   <div>id: {{book.id}}</div>

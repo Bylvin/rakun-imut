@@ -1,25 +1,57 @@
-.books {
-  padding: 0;
-}
-.books a {
-  display: block;
-  background: yellow;
-  border-radius: 8px;
-  padding: 10px;
-  margin-bottom: 5px;
-  text-decoration: none;
+.bar{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
 }
 
-.books a > div {
-  display: flex;
+.nvbr{
+  background-color: #EFCA00;
 }
 
-.books a > div > .title {
-  flex: 1;
+.text{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  margin:0px;
 }
 
-.books a > div > .price{
-  width: 50px;
+.title{
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  color: #525252;
   text-align: center;
 }
-    
+
+.booktitle{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  color: #525252;
+  text-align: left;
+}
+
+.price{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  color: #525252;
+  text-align: right;
+}
+
+.iter{
+  border:1px solid transparent;
+}
+
+.content{
+  text-align: left;
+  border-radius:10px;
+  border-color: #EFCA00;
+  background-color: transparent;
+  padding: 15px;
+}
+
+#bookgroup{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+

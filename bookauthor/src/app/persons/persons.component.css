@@ -1,23 +1,34 @@
-h2{
+.title{
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
+  font-weight: bold;
   text-align: center;
 }
-.persons {
-  padding: 0;
-}
-.persons a {
-  display: block;
-  background: yellow;
-  border-radius: 8px;
-  padding: 10px;
-  margin-bottom: 5px;
-  text-decoration: none;
+
+.text{
+  font-family: 'Roboto', sans-serif;
+  padding:50px 10px 1px;
+  font-size: 20px;
+  margin:0px;
+  font-weight: bold;
 }
 
-.persons a > div {
-  display: flex;
+.iter{
+  border:1px solid transparent;
+  padding:5px;
 }
 
-.persons a > div > .name {
-  flex: 1;
+.content{
+  text-align: left;
+  border-radius:10px;
+  border-color: #EFCA00;
+  background-color: transparent;
+  padding:20px;
+  width:75vw;
+
 }
-  
+
+.container{
+  margin:0px auto;
+  text-align: center;
+}

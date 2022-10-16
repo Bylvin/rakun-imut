@@ -1,17 +1,20 @@
-<div class="row">
-  <div class="col-md-12">
-    <h2>Pilih Penulis</h2>
-  </div>
+<div class="container">
+  <h1 class="title m-5">Pilih Penulis</h1>
+  <ul class="list-group">
+    <li *ngFor="let person of persons" class="list-group-item iter">
+      <a routerLink="/books/author/{{person.id}}">
+        <button type="button" class="content rounded-lg">
+          <span class="logo"><i class="bi bi-person-circle"></i>
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="black" class="bi bi-person-circle" viewBox="0 0 16 16">
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+            </svg>
+          </span>
+          <span class="text"> {{person.name}}</span>
+        </button>
+      </a>
 
-  <div class="col-md-12">
-    <ul class="persons list-group">
-      <li *ngFor="let person of persons" class="list-group-item">
-        <a routerLink="/books/author/{{person.id}}">
-          <div>
-            <div class="name">{{person.name}}</div>
-          </div>
-        </a>
-      </li>
-    </ul>
-  </div>
+    </li>
+  </ul>
+
 </div>
