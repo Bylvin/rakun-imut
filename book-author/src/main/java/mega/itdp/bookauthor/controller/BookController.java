@@ -61,7 +61,7 @@ public class BookController
 	}
 
 	// Show based on Author
-	@GetMapping("/authorId={authorId}")
+	@GetMapping("/author/{authorId}")
 	public List<BookResult> showAllByAuthor(@PathVariable Long authorId)
 	{
 		List<Book> selectAllByAuthorId = bookRepository.findAllByAuthorId(authorId);
