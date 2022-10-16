@@ -1,0 +1,12 @@
+<h2>Pilih Buku</h2>
+
+<ul class="books list-group">
+  <li *ngFor="let book of books" class="list-group-item">
+    <a routerLink="/books/{{book.id}}">
+      <div>
+        <div class="title">{{book.title}}</div>
+        <div class="price">{{book.price}}</div>
+      </div>
+    </a>
+  </li>
+</ul>

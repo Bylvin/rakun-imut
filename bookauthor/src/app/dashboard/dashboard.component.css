@@ -1,0 +1,15 @@
+.persons-menu {
+  padding: 0;
+}
+.persons-menu a {
+  display: block;
+  background: yellow;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+
+.persons-menu a > div {
+  display: flex;
+}

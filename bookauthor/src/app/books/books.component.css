@@ -1,0 +1,25 @@
+.books {
+  padding: 0;
+}
+.books a {
+  display: block;
+  background: yellow;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+
+.books a > div {
+  display: flex;
+}
+
+.books a > div > .title {
+  flex: 1;
+}
+
+.books a > div > .price{
+  width: 50px;
+  text-align: center;
+}
+    
