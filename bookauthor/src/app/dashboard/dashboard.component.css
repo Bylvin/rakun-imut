@@ -40,4 +40,5 @@ button{
   color: #525252;
   border-style: none;
   font-weight: bold;
+  box-shadow: 0px 5px 5px 1px #525252;
 }
