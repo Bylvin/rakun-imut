@@ -1,15 +1,43 @@
-.persons-menu {
-  padding: 0;
-}
-.persons-menu a {
-  display: block;
-  background: yellow;
-  border-radius: 8px;
-  padding: 10px;
-  margin-bottom: 5px;
-  text-decoration: none;
+.container{
+  width: 100vw;
+  height: 100vh;
+  background-color: #fad311;
 }
 
-.persons-menu a > div {
+#logo{
+  height: 500px;
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-cropper{
+  width: 150px;
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: orange;
+}
+
+img{
+  display: inline;
+  margin: 0 auto;
+  height: 100%;
+  max-width: 100%;
+}
+
+#login{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button{
+  width: 300px;
+  background-color: #fff9db;
+  color: #525252;
+  border-style: none;
+  font-weight: bold;
 }

@@ -1,6 +1,15 @@
-<h2>Pilih Penulis</h2>
-<div class="persons-menu">
-  <a *ngFor="let person of persons" routerLink="/persons/{{person.id}}">
-    {{person.name}}
-  </a>
+<div class="container">
+  <div class="row">
+    <div id="logo" class="col-md-12">
+      <div class="image-cropper">
+        <img class="rounded" src="../../assets/rakun-imut.jpg" alt="Logo Rakun Imut">
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div id="login" class="col-md-12">
+      <button type="button" class="btn btn-primary btn-lg" routerLink="/persons">Login</button>
+    </div>
+  </div>
 </div>
