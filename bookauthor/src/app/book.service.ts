@@ -56,9 +56,9 @@ export class BookService {
     );
   }
 
-  updatePerson(person: Person): Observable<any> {
-    return this.http.put<any>(this.booksUrl+'/'+person.id,
-        person, this.httpOptions)
+  updatePrice(book: Book): Observable<any> {
+    return this.http.put<any>(this.booksUrl+'/'+book.id,
+    book, this.httpOptions)
 
     .pipe(
       catchError((error: any): Observable<any> =>{

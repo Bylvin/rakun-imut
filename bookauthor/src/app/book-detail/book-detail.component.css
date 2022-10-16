@@ -1,23 +1,80 @@
 .bar{
-    font-family: 'Roboto', sans-serif;
-    font-size: 1em;
-  }
-  
-  .nvbr{
-    background-color: #EFCA00;
-  }
-  
-  .text{
-    font-family: 'Roboto', sans-serif;
-    font-size: 1em;
-    font-weight: bold;
-    margin:0px;
-  }
-  
-  .title{
-    font-family: 'Roboto', sans-serif;
-    font-size: 2em;
-    font-weight: bold;
-    color: #525252;
-    text-align: center;
-  }
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+}
+
+.nvbr{
+  background-color: #EFCA00;
+}
+
+.text{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  margin:0px;
+}
+
+.title{
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  color: #525252;
+  text-align: center;
+}
+
+.box{
+  text-align: center;
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.hargaContainer{
+  margin-top: 10px;
+  padding-left: 10px;
+  padding-bottom:20px;
+  background-color: #EFCA00;
+  border-radius: 10px;
+}
+
+#exampleModalLabel{
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.txtInput{
+  margin-top: 50px;
+  width:85vw;
+  text-align: left;
+}
+
+.btnModal{
+  width:100vw;
+}
+
+.label{
+  text-align: left;
+}
+
+.mdlButton{
+  width:95vw;
+  margin-top:70vw;
+  border-radius: 10px;
+  background-color: lightgrey;
+  padding:15px;
+  color:#525252;
+  font-weight: bold;
+  box-shadow: 0px 5px 5px 1px #525252;
+}
+
+.modal-header{
+  text-align: center;
+}
+.box>.title{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.hargaContainer > .price{
+  font-size: 2em;
+  margin-bottom:50px;
+}

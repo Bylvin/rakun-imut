@@ -25,6 +25,10 @@ export class BookDetailComponent implements OnInit {
     this.getBook();
   }
 
+  localizer(text:Number):String{
+    return text.toLocaleString();
+  }
+
   getBook() {
     const id = Number(this.route.snapshot.paramMap.get('id'));
     this.bookService.getBook(id)
@@ -35,4 +39,11 @@ export class BookDetailComponent implements OnInit {
     this.location.back();
   }
 
+  changePrice(price:any){
+    if(!this.book){
+      return;
+    }
+    this.book.price = Number(this.localizer(price));
+    this.bookService.updatePrice(this.book).subscribe(()=>{});
+  }
 }
